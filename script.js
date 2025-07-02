@@ -2,9 +2,6 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Initialise EmailJS with your public key
-    emailjs.init("QlpilMmxsfIu7zhqY");
-
     // Mobile Menu Toggle
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
