@@ -57,10 +57,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
+            const emailBody = `${message}\n\n---\nContact Information:\nEmail: ${email}\nName: ${firstName} ${lastName}`;
+
             emailjs.send("service_eynsdlh", "template_4da7fag", {
                 from_name: `${firstName} ${lastName}`,
                 reply_to: email,
-                message: message
+                message: emailBody
             }).then(() => {
                 showNotification('Thank you for your message! We’ll be in touch shortly.', 'success');
                 contactForm.reset();
