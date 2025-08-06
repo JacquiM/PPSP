@@ -44,6 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const firstName = formData.get('firstName');
             const lastName = formData.get('lastName');
             const email = formData.get('email');
+            const phone = formData.get('phone');
+            const propertyType = formData.get('propertyType');
             const message = formData.get('message');
 
             if (!firstName || !lastName || !email || !message) {
@@ -57,7 +59,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            const emailBody = `${message}\n\n---\nContact Information:\nEmail: ${email}\nName: ${firstName} ${lastName}`;
+            // Create comprehensive email body with all form fields
+            let emailBody = `${message}\n\n---\nContact Information:\nName: ${firstName} ${lastName}\nEmail: ${email}`;
+            
+            if (phone) {
+                emailBody += `\nPhone: ${phone}`;
+            }
+            
+            if (propertyType) {
+                const propertyTypeLabels = {
+                    'body-corporate': 'Body Corporate',
+                    'hoa': 'Home Owners Association',
+                    'sectional-title': 'Sectional Title',
+                    'other': 'Other'
+                };
+                emailBody += `\nProperty Type: ${propertyTypeLabels[propertyType] || propertyType}`;
+            }
 
             emailjs.send("service_eynsdlh", "template_4da7fag", {
                 from_name: `${firstName} ${lastName}`,
