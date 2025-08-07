@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>PPSP - Professional Property Solutions Provider</title>
+    <!-- Improved title tag with targeted keywords -->
+    <title>Professional Property Management Services | Body Corporate Management | PPSP South Africa</title>
 
-    <!-- Open Graph (used by social media & SEO) -->
-    <meta name="description" content="Professional Property Solutions Provider - Simplifying property management for Body Corporates and Home Owners Associations across South Africa">
-    <meta property="og:title" content="PPSP - Professional Property Solutions Provider">
-    <meta property="og:description" content="Comprehensive property management solutions for Body Corporates and Home Owners Associations across South Africa">
+    <!-- Enhanced meta description with keywords -->
+    <meta name="description" content="Professional Property Solutions Provider (PPSP) offers comprehensive property management services for Body Corporates and Home Owners Associations across South Africa. Expert levy collection, maintenance coordination, and compliance management.">
+    
+    <!-- Additional SEO meta tags -->
+    <meta name="keywords" content="property management, body corporate management, home owners association, levy collection, property maintenance, South Africa, PPSP, sectional title management">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Professional Property Solutions Provider">
+    <!-- Open Graph (improved with better descriptions) -->
+    <meta property="og:title" content="Professional Property Management Services | PPSP South Africa">
+    <meta property="og:description" content="Expert property management solutions for Body Corporates and Home Owners Associations. Comprehensive services including levy collection, maintenance, and compliance management across South Africa.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.ppsp.co.za/logo.png">
     <meta property="og:url" content="https://www.ppsp.co.za">
+    <meta property="og:site_name" content="PPSP - Professional Property Solutions Provider">
+
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Professional Property Management Services | PPSP South Africa">
+    <meta name="twitter:description" content="Expert property management solutions for Body Corporates and Home Owners Associations across South Africa.">
+    <meta name="twitter:image" content="https://www.ppsp.co.za/logo.png">
 
     <!-- Canonical Link -->
     <link rel="canonical" href="https://www.ppsp.co.za">
@@ -23,8 +37,10 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("QlpilMmxsfIu7zhqY");
+    </script>
     <script>
         tailwind.config = {
             theme: {
@@ -40,11 +56,6 @@
         }
     </script>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
-  emailjs.init("QlpilMmxsfIu7zhqY");
-</script>
-<script src="main.js"></script>
 
 </head>
 <body class="font-inter antialiased">
@@ -56,7 +67,7 @@
                     <!-- PPSP Logo -->
                     <div class="flex items-center space-x-3">
                         <div class="relative">
-                            <img src="logo.png" alt="PPSP Logo" class="h-10 w-auto">
+                            <img src="logo.png" alt="PPSP Professional Property Solutions Provider Logo - Property Management Services South Africa" class="h-10 w-auto">
                         </div>
                         <div>
                             <h1 class="text-xl font-bold text-gray-700">PPSP</h1>
@@ -77,7 +88,7 @@
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-700 hover:text-ppsp-red p-2">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-ppsp-red p-2" aria-label="Open mobile navigation menu">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
@@ -105,28 +116,28 @@
                 <div class="space-y-8">
                     <div class="space-y-4">
                         <h1 class="text-4xl md:text-6xl font-bold text-gray-700 leading-tight">
-                            Professional <span class="text-ppsp-red">Property</span> Solutions
+                            Professional <span class="text-ppsp-red">Property Management</span> Solutions in South Africa
                         </h1>
                         <p class="text-xl text-gray-600 leading-relaxed">
-                            We are committed to simplifying and streamlining property management for Body Corporate's and Home Owners Associations across South Africa.
+                            Expert Body Corporate and Home Owners Association management services. We simplify property management with comprehensive levy collection, maintenance coordination, and compliance solutions across South Africa.
                         </p>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#services" class="bg-ppsp-red text-white hover:bg-ppsp-dark-red px-8 py-4 text-lg rounded-md font-medium transition-colors inline-flex items-center justify-center smooth-scroll">
-                            <span>Our Services</span>
+                            <span>Our Property Management Services</span>
                             <svg class="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
                         </a>
                         <a href="#contact" class="border-2 border-ppsp-red text-ppsp-red hover:bg-ppsp-red hover:text-white px-8 py-4 text-lg rounded-md font-medium transition-colors inline-flex items-center justify-center smooth-scroll">
-                            Get in Touch
+                            Contact Property Managers
                         </a>
                     </div>
                 </div>
                 <div class="relative">
                     <img 
                         src="PPSP Background.png" 
-                        alt="Modern office building representing professional property management services" 
+                        alt="Modern South African office building showcasing professional property management services by PPSP" 
                         class="rounded-2xl shadow-2xl w-full h-auto" 
                     />
                     <div class="absolute -bottom-6 -left-6 w-24 h-24 gradient-circle rounded-full"></div>
@@ -142,7 +153,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6">
                     <div class="space-y-4">
-                        <h2 class="text-3xl md:text-4xl font-bold text-gray-700">About <span class="text-ppsp-red">PPSP</span></h2>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-700">About <span class="text-ppsp-red">PPSP Property Management</span></h2>
                         <p class="text-lg text-gray-600 leading-relaxed">
                             Our team has extensive experience in property management solutions and understands the unique needs of each property.
                         </p>
@@ -159,18 +170,18 @@
                     <div class="grid grid-cols-2 gap-6">
                         <div class="text-center p-6 bg-gray-50 rounded-lg">
                             <div class="text-3xl font-bold text-ppsp-red mb-2">100+</div>
-                            <div class="text-sm text-gray-600">Properties Managed</div>
+                            <div class="text-sm text-gray-600">Properties Under Management</div>
                         </div>
                         <div class="text-center p-6 bg-gray-50 rounded-lg">
                             <div class="text-3xl font-bold text-ppsp-red mb-2">10+</div>
-                            <div class="text-sm text-gray-600">Years Experience</div>
+                            <div class="text-sm text-gray-600">Years Property Management Experience</div>
                         </div>
                     </div>
                 </div>
                 <div class="relative">
                     <img 
                         src="PPSP Building.png" 
-                        alt="Professional team meeting discussing property management strategies" 
+                        alt="PPSP property management team meeting discussing Body Corporate management strategies in South Africa" 
                         class="rounded-2xl shadow-lg w-full h-auto" 
                     />
                     <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-ppsp-red/10 to-transparent"></div>
@@ -183,9 +194,9 @@
     <section id="services" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-700 mb-4">Our <span class="text-ppsp-red">Services</span></h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-700 mb-4">Professional Property Management <span class="text-ppsp-red">Services</span></h2>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                    Comprehensive property management solutions tailored to meet the unique needs of Body Corporates and Home Owners Associations.
+                    Comprehensive Body Corporate and Home Owners Association management services designed for South African property communities.
                 </p>
             </div>
 
@@ -196,9 +207,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-4">Administrative & New Development Support</h3>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-4">Body Corporate Administration & Development Support</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Organising meetings, preparing documents. Assist developers with budgeting, documentation, and compliance setup.
+                        Complete administrative services including AGM organization, document preparation, and new development support with budgeting and compliance setup.
                     </p>
                 </div>
 
@@ -208,9 +219,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-4">Financial & Levy Management</h3>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-4">Levy Collection & Financial Management</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Preparing budgets & financial packs, managing accounts, managing monthly payments and daily invoices.
+                        Professional levy collection services, budget preparation, financial reporting, and comprehensive account management for Body Corporates.
                     </p>
                 </div>
 
@@ -220,9 +231,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-4">Debt Recovery</h3>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-4">Debt Recovery Services</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Monitoring levies, coordinating collections to ensure financial stability for your property.
+                        Professional debt recovery and levy collection coordination to ensure financial stability for your property community.
                     </p>
                 </div>
 
@@ -233,9 +244,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-4">Emergency & Maintenance Coordination</h3>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-4">Property Maintenance Coordination</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Attend to urgent issues. Source and manage contractor quotes as requested by Trustees.
+                        Emergency response services and maintenance coordination, including contractor sourcing and quote management for Trustees.
                     </p>
                 </div>
 
@@ -245,9 +256,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-4">Compliance & Governance</h3>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-4">Sectional Title Compliance & Governance</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Ensuring adherence to legislation and maintaining proper governance standards.
+                        Ensuring full compliance with South African sectional title legislation and maintaining proper governance standards.
                     </p>
                 </div>
 
@@ -257,9 +268,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h4m0 4v2m0 0h4m0 0v4h-4v-4zm0 0V7h4" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-4">Representation</h3>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-4">Property Management Representation</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Acting as key contact and agent representative for your property management needs.
+                        Acting as your dedicated property management representative and key contact for all Body Corporate needs.
                     </p>
                 </div>
 
@@ -269,9 +280,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-4">Consultation Services</h3>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-4">Property Management Consultation</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Guidance for body corporates and home owners associations on best practices and strategic planning.
+                        Expert guidance for Body Corporates and Home Owners Associations on best practices and strategic property management planning.
                     </p>
                 </div>
             </div>
@@ -283,10 +294,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Mission -->
             <div class="text-center mb-20">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-700 mb-8">Our <span class="text-ppsp-red">Mission</span></h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-700 mb-8">Our Property Management <span class="text-ppsp-red">Mission</span></h2>
                 <div class="max-w-4xl mx-auto">
                     <p class="text-xl text-gray-600 leading-relaxed mb-8">
-                        At Professional Property Solutions Provider, our mission is to simplify and elevate property management for Homeowners Associations and Body Corporates through personalised service, transparent communication, and expert guidance.
+                        At Professional Property Solutions Provider, our mission is to simplify and elevate Body Corporate and Home Owners Association management across South Africa through personalised service, transparent communication, and expert property management guidance.
                     </p>
                     
                     <!-- Mission commitments -->
@@ -297,8 +308,8 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                                 </svg>
                             </div>
-                            <h3 class="text-lg font-semibold text-gray-700 mb-2">Efficiency</h3>
-                            <p class="text-gray-600">Streamlining processes for optimal performance</p>
+                            <h3 class="text-lg font-semibold text-gray-700 mb-2">Property Management Efficiency</h3>
+                            <p class="text-gray-600">Streamlining Body Corporate processes for optimal performance</p>
                         </div>
 
                         <div class="text-center p-6">
@@ -307,8 +318,8 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                                 </svg>
                             </div>
-                            <h3 class="text-lg font-semibold text-gray-700 mb-2">Trust</h3>
-                            <p class="text-gray-600">Building strong relationships through reliability</p>
+                            <h3 class="text-lg font-semibold text-gray-700 mb-2">Trusted Property Partners</h3>
+                            <p class="text-gray-600">Building strong relationships through reliable property management</p>
                         </div>
 
                         <div class="text-center p-6">
@@ -317,8 +328,8 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                                 </svg>
                             </div>
-                            <h3 class="text-lg font-semibold text-gray-700 mb-2">Proactivity</h3>
-                            <p class="text-gray-600">Anticipating and preventing potential issues</p>
+                            <h3 class="text-lg font-semibold text-gray-700 mb-2">Proactive Management</h3>
+                            <p class="text-gray-600">Anticipating and preventing property management issues</p>
                         </div>
                     </div>
                 </div>
@@ -326,7 +337,7 @@
 
             <!-- Values -->
             <div class="bg-gray-50 rounded-2xl p-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-700 text-center mb-12">Our <span class="text-ppsp-red">Values</span></h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-700 text-center mb-12">Our Property Management <span class="text-ppsp-red">Values</span></h2>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="text-center">
@@ -335,8 +346,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                             </svg>
                         </div>
-                        <h3 class="text-lg font-semibold text-gray-700 mb-2">Integrity</h3>
-                        <p class="text-sm text-gray-600">Conducting business with honesty and transparency</p>
+                        <h3 class="text-lg font-semibold text-gray-700 mb-2">Property Management Integrity</h3>
+                        <p class="text-sm text-gray-600">Conducting all Body Corporate business with honesty and transparency</p>
                     </div>
 
                     <div class="text-center">
@@ -345,8 +356,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                             </svg>
                         </div>
-                        <h3 class="text-lg font-semibold text-gray-700 mb-2">Excellence</h3>
-                        <p class="text-sm text-gray-600">Striving for the highest standards in service delivery</p>
+                        <h3 class="text-lg font-semibold text-gray-700 mb-2">Service Excellence</h3>
+                        <p class="text-sm text-gray-600">Striving for the highest standards in property management delivery</p>
                     </div>
 
                     <div class="text-center">
@@ -355,8 +366,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
                             </svg>
                         </div>
-                        <h3 class="text-lg font-semibold text-gray-700 mb-2">Customer Focus</h3>
-                        <p class="text-sm text-gray-600">Prioritising client needs and delivering tailored solutions</p>
+                        <h3 class="text-lg font-semibold text-gray-700 mb-2">Client-Focused Service</h3>
+                        <p class="text-sm text-gray-600">Prioritising Body Corporate needs with tailored property solutions</p>
                     </div>
 
                     <div class="text-center">
@@ -365,7 +376,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                         </div>
-                        <h3 class="text-lg font-semibold text-gray-700 mb-2">Reliability</h3>
+                        <h3 class="text-lg font-semibold text-gray-700 mb-2">Reliable Property Management</h3>
                         <p class="text-sm text-gray-600">Delivering consistent and dependable service</p>
                     </div>
 
@@ -375,7 +386,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                             </svg>
                         </div>
-                        <h3 class="text-lg font-semibold text-gray-700 mb-2">Innovation</h3>
+                        <h3 class="text-lg font-semibold text-gray-700 mb-2">Property Management Innovation</h3>
                         <p class="text-sm text-gray-600">Embracing smart technologies and forward-thinking strategies</p>
                     </div>
 
@@ -385,8 +396,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                             </svg>
                         </div>
-                        <h3 class="text-lg font-semibold text-gray-700 mb-2">Sustainability</h3>
-                        <p class="text-sm text-gray-600">Promoting environmentally responsible practices</p>
+                        <h3 class="text-lg font-semibold text-gray-700 mb-2">Environmental Sustainability</h3>
+                        <p class="text-sm text-gray-600">Promoting environmentally responsible property practices</p>
                     </div>
 
                     <div class="text-center">
@@ -395,8 +406,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h4m0 4v2m0 0h4m0 0v4h-4v-4zm0 0V7h4" />
                             </svg>
                         </div>
-                        <h3 class="text-lg font-semibold text-gray-700 mb-2">Collaboration</h3>
-                        <p class="text-sm text-gray-600">Working in partnership with clients and communities</p>
+                        <h3 class="text-lg font-semibold text-gray-700 mb-2">Community Collaboration</h3>
+                        <p class="text-sm text-gray-600">Working in partnership with clients and property communities</p>
                     </div>
 
                     <div class="text-center">
@@ -418,9 +429,9 @@
     <section id="contact" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-700 mb-4">Get in <span class="text-ppsp-red">Touch</span></h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-700 mb-4">Contact Our Property Management <span class="text-ppsp-red">Team</span></h2>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                    Ready to simplify your property management? Contact us today to discuss how we can help your Body Corporate or Home Owners Association.
+                    Ready to simplify your Body Corporate or Home Owners Association management? Contact our experienced property management team today to discuss your South African property needs.
                 </p>
             </div>
 
@@ -614,7 +625,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="space-y-4">
                     <div class="flex items-center space-x-3">
-                        <img src="logo.png" alt="PPSP Logo" class="h-8 w-auto">
+                        <img src="logo.png" alt="PPSP Professional Property Solutions Provider Logo" class="h-8 w-auto">
                         <h3 class="text-xl font-bold">PPSP</h3>
                     </div>
                     <p class="text-gray-300">
