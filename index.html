@@ -38,8 +38,12 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="config.js"></script>
     <script>
-        emailjs.init("QlpilMmxsfIu7zhqY");
+        // Initialize EmailJS with config
+        if (window.CONFIG && window.CONFIG.emailjs) {
+            emailjs.init(window.CONFIG.emailjs.publicKey);
+        }
     </script>
     <script>
         tailwind.config = {

@@ -1,0 +1,33 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Create config.js from secrets
+      run: |
+        cat > config.js << EOF
+        window.CONFIG = {
+            emailjs: {
+                publicKey: '${{ secrets.EMAILJS_PUBLIC_KEY }}',
+                serviceId: '${{ secrets.EMAILJS_SERVICE_ID }}',
+                templateId: '${{ secrets.EMAILJS_TEMPLATE_ID }}'
+            }
+        };
+        EOF
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./

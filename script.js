@@ -76,11 +76,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 emailBody += `\nProperty Type: ${propertyTypeLabels[propertyType] || propertyType}`;
             }
 
-            emailjs.send("service_eynsdlh", "template_4da7fag", {
-                from_name: `${firstName} ${lastName}`,
-                reply_to: email,
-                message: emailBody
-            }).then(() => {
+            // Check if config is loaded
+            if (!window.CONFIG?.emailjs?.serviceId || !window.CONFIG?.emailjs?.templateId) {
+                showNotification('Configuration error. Please try again later.', 'error');
+                console.error('EmailJS configuration not loaded');
+                return;
+            }
+
+            emailjs.send(
+                window.CONFIG.emailjs.serviceId, 
+                window.CONFIG.emailjs.templateId, 
+                {
+                    from_name: `${firstName} ${lastName}`,
+                    reply_to: email,
+                    message: emailBody
+                }
+            ).then(() => {
                 showNotification('Thank you for your message! We’ll be in touch shortly.', 'success');
                 contactForm.reset();
             }, (error) => {

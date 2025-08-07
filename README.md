@@ -1,6 +1,34 @@
-# PPSP Website - GitHub Pages Deployment
+# PPSP - Professional Property Solutions Provider
 
-This is the static website for Professional Property Solutions Provider (PPSP), optimized for GitHub Pages deployment.
+A professional website for property management services in South Africa, optimized for GitHub Pages deployment.
+
+## Setup Instructions
+
+### Local Development
+
+1. Clone the repository
+2. Copy `config.example.js` to `config.js`
+3. Update `config.js` with your actual EmailJS credentials:
+   ```javascript
+   window.CONFIG = {
+       emailjs: {
+           publicKey: 'your_actual_public_key',
+           serviceId: 'your_service_id',
+           templateId: 'your_template_id'
+       }
+   };
+   ```
+4. Open `index.html` in your browser
+
+### Deployment
+
+#### GitHub Secrets Required
+
+For automatic deployment, add these secrets to your GitHub repository (Settings → Secrets and variables → Actions):
+
+- `EMAILJS_PUBLIC_KEY`: Your EmailJS public key
+- `EMAILJS_SERVICE_ID`: Your EmailJS service ID
+- `EMAILJS_TEMPLATE_ID`: Your EmailJS template ID
 
 ## Files Structure
 
