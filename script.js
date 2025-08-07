@@ -159,6 +159,84 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     images.forEach(img => imageObserver.observe(img));
+
+    // Reviews Carousel
+    const reviewsTrack = document.getElementById('reviews-track');
+    const prevButton = document.getElementById('prev-review');
+    const nextButton = document.getElementById('next-review');
+    const reviewDots = document.querySelectorAll('.review-dot');
+    
+    if (reviewsTrack && prevButton && nextButton) {
+        let currentIndex = 0;
+        const totalReviews = reviewDots.length;
+        
+        function updateCarousel() {
+            const translateX = -currentIndex * 100;
+            reviewsTrack.style.transform = `translateX(${translateX}%)`;
+            
+            // Update dots
+            reviewDots.forEach((dot, index) => {
+                if (index === currentIndex) {
+                    dot.classList.remove('bg-gray-300');
+                    dot.classList.add('bg-ppsp-red');
+                } else {
+                    dot.classList.remove('bg-ppsp-red');
+                    dot.classList.add('bg-gray-300');
+                }
+            });
+        }
+        
+        function nextReview() {
+            currentIndex = (currentIndex + 1) % totalReviews;
+            updateCarousel();
+        }
+        
+        function prevReview() {
+            currentIndex = (currentIndex - 1 + totalReviews) % totalReviews;
+            updateCarousel();
+        }
+        
+        // Event listeners
+        nextButton.addEventListener('click', nextReview);
+        prevButton.addEventListener('click', prevReview);
+        
+        // Dot navigation
+        reviewDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                updateCarousel();
+            });
+        });
+        
+        // Auto-play carousel
+        setInterval(nextReview, 7000);
+        
+        // Touch/swipe support for mobile
+        let startX = 0;
+        let endX = 0;
+        
+        reviewsTrack.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+        
+        reviewsTrack.addEventListener('touchend', (e) => {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        });
+        
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const deltaX = startX - endX;
+            
+            if (Math.abs(deltaX) > swipeThreshold) {
+                if (deltaX > 0) {
+                    nextReview();
+                } else {
+                    prevReview();
+                }
+            }
+        }
+    }
 });
 
 // Notification system

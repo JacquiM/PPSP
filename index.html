@@ -86,6 +86,7 @@
                         <a href="#about" class="text-gray-700 hover:text-ppsp-red px-3 py-2 text-sm font-medium transition-colors smooth-scroll">About</a>
                         <a href="#services" class="text-gray-700 hover:text-ppsp-red px-3 py-2 text-sm font-medium transition-colors smooth-scroll">Services</a>
                         <a href="#mission" class="text-gray-700 hover:text-ppsp-red px-3 py-2 text-sm font-medium transition-colors smooth-scroll">Mission</a>
+                        <a href="#reviews" class="text-gray-700 hover:text-ppsp-red px-3 py-2 text-sm font-medium transition-colors smooth-scroll">Reviews</a>
                         <a href="#contact" class="bg-ppsp-red text-white hover:bg-ppsp-dark-red px-6 py-2 rounded-md text-sm font-medium transition-colors smooth-scroll" style="color: white !important;">Contact</a>
                     </div>
                 </div>
@@ -108,6 +109,7 @@
                 <a href="#about" class="text-gray-700 hover:text-ppsp-red block px-3 py-2 text-base font-medium smooth-scroll">About</a>
                 <a href="#services" class="text-gray-700 hover:text-ppsp-red block px-3 py-2 text-base font-medium smooth-scroll">Services</a>
                 <a href="#mission" class="text-gray-700 hover:text-ppsp-red block px-3 py-2 text-base font-medium smooth-scroll">Mission</a>
+                <a href="#reviews" class="text-gray-700 hover:text-ppsp-red block px-3 py-2 text-base font-medium smooth-scroll">Reviews</a>
                 <a href="#contact" class="text-gray-700 hover:text-ppsp-red block px-3 py-2 text-base font-medium smooth-scroll">Contact</a>
             </div>
         </div>
@@ -623,6 +625,100 @@
         </div>
     </section>
 
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-700 mb-4">What Our <span class="text-ppsp-red">Clients Say</span></h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Discover why Body Corporates and Home Owners Associations across South Africa trust PPSP for their property solutions.
+                </p>
+            </div>
+
+            <!-- Reviews Carousel -->
+            <div class="relative max-w-6xl mx-auto">
+                <div id="reviews-carousel" class="overflow-hidden">
+                    <div id="reviews-track" class="flex transition-transform duration-500 ease-in-out">
+                        <!-- Review 1 - Quintin Kruger -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 mx-auto max-w-4xl">
+                                <div class="flex items-center mb-6">
+                                    <div class="flex text-yellow-400 text-xl">
+                                        ★★★★★
+                                    </div>
+                                    <span class="ml-2 text-sm text-gray-500">5.0</span>
+                                    <span class="ml-auto text-sm text-gray-400">August 2025</span>
+                                </div>
+                                <blockquote class="text-lg text-gray-700 leading-relaxed italic">
+                                    "Such a great team to work with! Honestly, working with PPSP has made life so much easier. They're super responsive, always on top of things, and really take the stress out of managing property. You can tell they actually care about what they do — it's not just ticking boxes. They keep us updated, deal with issues quickly, and their advice is always helpful and easy to understand. It's rare to find a managing agent that feels more like a partner than a service provider, but PPSP definitely gets it right. If you're looking for a property management team that's professional and easy to work with, I'd 100% recommend them."
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!-- Review 2 - Jacqui Muller -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 mx-auto max-w-4xl">
+                                <div class="flex items-center mb-6">
+                                    <div class="flex text-yellow-400 text-xl">
+                                        ★★★★★
+                                    </div>
+                                    <span class="ml-2 text-sm text-gray-500">5.0</span>
+                                    <span class="ml-auto text-sm text-gray-400">August 2025</span>
+                                </div>
+                                <blockquote class="text-lg text-gray-700 leading-relaxed italic">
+                                    "PPSP offers a supportive, dynamic environment where personal growth and professional excellence go hand in hand. Whether it's the quality of the service, the strong community values, or the well-structured programs, PPSP consistently delivers a high standard. The staff are not only knowledgeable but also genuinely invested in the success and well-being of each individual. It's a place where discipline, development, and opportunity meet - creating a strong foundation for future success. I'd confidently recommend PPSP to anyone looking for a structured, inspiring, and enriching experience."
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Navigation -->
+                <button id="prev-review" class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 text-ppsp-red hover:bg-ppsp-red hover:text-white">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button id="next-review" class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 text-ppsp-red hover:bg-ppsp-red hover:text-white">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+
+                <!-- Carousel Dots -->
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button class="review-dot w-3 h-3 rounded-full bg-ppsp-red transition-all duration-300" data-index="0"></button>
+                    <button class="review-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300" data-index="1"></button>
+                </div>
+
+            </div>
+
+            <!-- Reviews Buttons -->
+            <div class="text-center mt-12">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="https://www.google.com/search?q=PPSP+Professional+Property+Solutions+Provider+reviews" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 border-2 border-ppsp-red text-ppsp-red hover:bg-ppsp-red hover:text-white rounded-md font-medium transition-colors">
+                        <svg class="mr-2 h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                        View All Google Reviews
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61564878364801&sk=reviews" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300 shadow-md hover:shadow-lg">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                        View All Facebook Reviews
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-[#84888d] text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -643,6 +739,7 @@
                         <li><a href="#home" class="text-gray-300 hover:text-white transition-colors smooth-scroll">Home</a></li>
                         <li><a href="#about" class="text-gray-300 hover:text-white transition-colors smooth-scroll">About</a></li>
                         <li><a href="#services" class="text-gray-300 hover:text-white transition-colors smooth-scroll">Services</a></li>
+                        <li><a href="#reviews" class="text-gray-300 hover:text-white transition-colors smooth-scroll">Reviews</a></li>
                         <li><a href="#mission" class="text-gray-300 hover:text-white transition-colors smooth-scroll">Mission</a></li>
                         <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors smooth-scroll">Contact</a></li>
                     </ul>
